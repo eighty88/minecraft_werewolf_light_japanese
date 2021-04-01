@@ -3,6 +3,7 @@ loot give @a[scores={DrunkPlayer=1..,DrunkKill=1..,Drunk=0}] loot mwj:item/custo
 scoreboard players set @a[scores={DrunkKill=1..}] Drunk 1
 scoreboard players set @a[scores={DrunkKill=1..}] DrunkKill 0
 
+clear @a[scores={DrunkPlayer=1..,Drunk=0}] redstone_torch
 
 #DrinkMilk
 execute as @a[scores={DrinkMilk=1..},team=Player] run loot give @s loot mwj:item/common/redstone_torch
@@ -25,5 +26,8 @@ tellraw @a[scores={CurrentRole=28,DrinkMilk=1..}] ["",{"text":"\n    あなた�
 tellraw @a[scores={CurrentRole=31,DrinkMilk=1..}] ["",{"text":"\n    あなたは ","color":"white"},{"text":"探偵","color":"dark_aqua"},{"text":" です。","color":"white"}]
 tellraw @a[scores={CurrentRole=35,DrinkMilk=1..}] ["",{"text":"\n    あなたは ","color":"white"},{"text":"怪盗","color":"blue"},{"text":" です。","color":"white"}]
 tellraw @a[scores={CurrentRole=40,DrinkMilk=1..}] ["",{"text":"\n    あなたは ","color":"white"},{"text":"猫又","color":"gold"},{"text":" です。","color":"white"}]
+
+execute if entity @a[scores={TrueRole=1..}] run scoreboard players operation @a[scores={DrunkPlayer=1..}] CurrentRole = @a[scores={DrunkPlayer=1..}] TrueRole
+scoreboard players reset @a TrueRole
 
 scoreboard players set @a[scores={DrinkMilk=1..}] DrinkMilk 0

@@ -13,3 +13,5 @@ scoreboard objectives remove PrevSetDrunk
 scoreboard objectives remove SetDrunk
 scoreboard objectives remove DrunkKill
 scoreboard objectives remove DrunkPlayer
+
+scoreboard objectives remove TrueRole
