@@ -19,4 +19,5 @@ difficulty peaceful
 gamemode adventure @a[gamemode=!spectator]
 effect clear @a[gamemode=!spectator]
 recipe take @a *
+recipe give @a quartz_block
 clear @a
