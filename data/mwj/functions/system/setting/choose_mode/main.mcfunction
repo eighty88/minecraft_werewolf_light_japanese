@@ -13,6 +13,8 @@ function mwj:system/time/time
 scoreboard players set @e[type=minecraft:item,nbt={Item:{tag:{Tags:["MWLsetting"]}}}] ThrowItem 1
 execute as @e[type=minecraft:item,scores={ThrowItem=1}] run function mwj:system/setting/choose_mode/detect_drop
 
+function mwj:system/custom/setting/main
+
 ## Detect Select Item
 scoreboard players set @p[tag=Host] ChosenCasting 1
 scoreboard players set @p[tag=Host] ChosenDummyRole 1
@@ -56,8 +58,6 @@ execute if score #MWL SetCasting matches 0 if score #MWL AddedRoleNumber matches
 execute if score #MWL SetCasting matches 1 as @p[tag=Host,scores={ChosenCastSet=1}] run function mwj:system/setting/casting_decision_common/set_inventory
 execute as @p[tag=Host,scores={SelectCancel=1}] run function mwj:stop
 execute as @p[tag=Host,scores={SelectOkay=1}] run function mwj:system/setting/exit_setting/exit_setting
-
-function mwj:system/custom/setting/main
 
 ## Process the system finished
 function mwj:system/setting/casting_decision_common/count_number_of_roles
