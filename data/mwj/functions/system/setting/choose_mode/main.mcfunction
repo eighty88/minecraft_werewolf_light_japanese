@@ -57,6 +57,8 @@ execute if score #MWL SetCasting matches 1 as @p[tag=Host,scores={ChosenCastSet=
 execute as @p[tag=Host,scores={SelectCancel=1}] run function mwj:stop
 execute as @p[tag=Host,scores={SelectOkay=1}] run function mwj:system/setting/exit_setting/exit_setting
 
+function mwj:system/custom/setting/main
+
 ## Process the system finished
 function mwj:system/setting/casting_decision_common/count_number_of_roles
 scoreboard players set #MWL TempVariable 0

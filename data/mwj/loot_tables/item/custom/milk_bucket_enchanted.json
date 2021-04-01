@@ -1,0 +1,26 @@
+{
+    "type": "generic",
+    "pools":[
+      {
+        "rolls":1,
+        "entries":[
+          {
+            "type":"minecraft:item",
+            "name":"minecraft:milk_bucket",
+            "functions":[
+              {
+                "function":"minecraft:set_name",
+                "name": [
+                  ["",{"text":"酔っぱらい","color":"white","bold":true,"italic":false}]
+                ]
+              },{
+                "function":"minecraft:set_nbt",
+                "tag":"{Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s}],HideFlags:63,Tags:[\"MWLitem\"]}"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

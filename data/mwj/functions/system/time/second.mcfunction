@@ -23,3 +23,5 @@ execute if score #MWL Phase matches 10..11 if score #MWL Second matches 0 as @a 
 
 ## Reset tick
 execute unless score #MWL Second matches 0 run scoreboard players set #MWL Tick 19
+
+function mwj:system/custom/ongame/second

@@ -150,5 +150,7 @@ scoreboard objectives remove SelectDecide5
 ## Remove Variables for Throwing Item
 scoreboard objectives remove ThrowItem
 
+function mwj:system/custom/setting/scoreboard/remove
+
 ## Clear Inventory
 clear @a

@@ -27,6 +27,8 @@ execute if score #MWL NumOfThieves matches 1.. run tellraw @a ["",{"text":"    "
 execute if score #MWL NumOfLtReds matches 1.. run tellraw @a ["",{"text":"    ","color":"white"},{"text":"赤ずきん","color":"gold"},{"text":" ： ","color":"white"},{"selector":"@a[scores={PrevRole=39}]","color":"white"}]
 execute if score #MWL NumOfCats matches 1.. run tellraw @a ["",{"text":"    ","color":"white"},{"text":"猫    又","color":"gold"},{"text":" ： ","color":"white"},{"selector":"@a[scores={PrevRole=40}]","color":"white"}]
 
+function mwj:system/custom/finish/result
+
 ## Send a display of dummy role
 execute if score #MWL SetDummyRole matches 1 run tellraw @a ["",{"text":"  役職欠けは以下の役職でした。","color":"white"}]
 execute if score #MWL DummyRole matches 1 run tellraw @a ["",{"text":"    ","color":"white"},{"text":"狂    人","color":"light_purple"},{"text":" ： 1人","color":"white"}]

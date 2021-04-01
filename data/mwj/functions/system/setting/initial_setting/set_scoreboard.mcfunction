@@ -363,6 +363,8 @@ scoreboard players set #MWL AddedItem5 1
 ## Set Temporary Variable
 scoreboard players set #MWL TempVariable 0
 
+function mwj:system/custom/setting/scoreboard/create
+
 ## Set bossbar
 scoreboard players set #MWL Tick 0
 scoreboard players operation #MWL Second = #MWL SettingTime

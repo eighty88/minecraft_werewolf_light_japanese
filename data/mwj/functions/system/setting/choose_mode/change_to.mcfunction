@@ -26,5 +26,7 @@ scoreboard players set @p[tag=Host] ChosenCastSet 0
 scoreboard players set @p[tag=Host] SelectCancel 0
 scoreboard players set @p[tag=Host] SelectOkay 0
 
+function mwj:system/custom/setting/change_to
+
 ## Change Mode
 scoreboard players set #MWL Phase 80

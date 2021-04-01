@@ -111,3 +111,5 @@ execute if score #MWL NumOfPlayers matches ..2 run scoreboard players set #MWL P
 ## Set dummy role
 scoreboard players operation #MWL NumOfRoles = #MWL NumOfPlayers
 execute if score #MWL SetDummyRole matches 1 run scoreboard players add #MWL NumOfRoles 1
+
+function mwj:system/custom/ongame/scoreboard/create

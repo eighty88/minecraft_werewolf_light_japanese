@@ -1,0 +1,33 @@
+{
+    "type": "generic",
+    "pools":[
+      {
+        "rolls":1,
+        "entries":[
+          {
+            "type":"minecraft:item",
+            "name":"minecraft:quartz",
+            "functions":[
+              {
+                "function":"minecraft:set_name",
+                "name": [
+                  ["",{"text":"クオーツ","color":"white","bold":true,"italic":false}]
+                ]
+              },{
+                "function":"minecraft:set_lore",
+                "entity" : "this",
+                "replace": true,
+                "lore":[
+                  ["",{"text":"4つクラフトで役職の再使用が可能","color":"red","bold":false,"italic":false}]
+                ]
+              },{
+                "function":"minecraft:set_nbt",
+                "tag":"{Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s}],HideFlags:63,Tags:[\"MWLitem\"]}"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

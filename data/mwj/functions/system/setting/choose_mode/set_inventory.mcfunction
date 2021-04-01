@@ -28,3 +28,5 @@ loot replace entity @p[tag=Host] inventory.19 loot mwj:setting/choose_mode/barri
 execute if score #MWL GameMode matches 1 if score #MWL NumOfWhite > #MWL NumOfBlack if score #MWL NumOfWhite matches 1.. if score #MWL NumOfBlack matches 1.. run loot replace entity @p[tag=Host] inventory.25 loot mwj:setting/choose_mode/structure_void
 execute if score #MWL GameMode matches 2 if score #MWL NumOfWhite matches 2.. if score #MWL NumOfBlack matches 1.. run loot replace entity @p[tag=Host] inventory.25 loot mwj:setting/choose_mode/structure_void
 execute if score #MWL GameMode matches 3 if score #MWL NumOfWhite matches 1.. if score #MWL NumOfBlack matches 1.. run loot replace entity @p[tag=Host] inventory.25 loot mwj:setting/choose_mode/structure_void
+
+function mwj:system/custom/setting/set_inventory

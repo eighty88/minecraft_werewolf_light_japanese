@@ -182,3 +182,5 @@ scoreboard objectives remove TEMP_DIGIT
 ## Remove Players
 scoreboard players reset @a
 scoreboard players reset #MWL
+
+function mwj:system/custom/ongame/scoreboard/remove
