@@ -6,6 +6,9 @@
 ## Version: v.1.5
 ###############################
 
+## Custom
+function mwj:system/custom/finish/remove_entity
+
 ## Kill entities
 kill @e[type=minecraft:item]
 kill @e[type=minecraft:arrow]
