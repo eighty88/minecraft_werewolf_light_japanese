@@ -76,7 +76,7 @@ execute as @a[team=Player,scores={CurrentRole=31}] run function mwj:system/ongam
 ## Thief System
 execute as @a[team=Player,scores={CurrentRole=35}] run function mwj:system/ongame/thief/main
 
-## Cat System
+## Little Red System
 execute as @a[team=Player,scores={CurrentRole=39}] run function mwj:system/ongame/little_red/main
 
 ## Cat System

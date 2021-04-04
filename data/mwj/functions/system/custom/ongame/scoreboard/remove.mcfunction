@@ -15,3 +15,6 @@ scoreboard objectives remove DrunkKill
 scoreboard objectives remove DrunkPlayer
 
 scoreboard objectives remove TrueRole
+
+scoreboard objectives remove homing
+scoreboard objectives remove homingCountDown

@@ -40,3 +40,5 @@ tag @a remove JustBorn
 #### Snowball system
 tag @a remove DetectSnowballMove
 tag @a remove DetectSnowballUnexist
+
+function mwj:system/custom/finish/remove_tags
