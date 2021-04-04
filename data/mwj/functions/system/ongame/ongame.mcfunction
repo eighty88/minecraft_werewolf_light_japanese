@@ -45,7 +45,7 @@ execute if score #MWL Version matches 16.. if score #MWL AddedLantern matches 1 
 ## Detect twisting vines
 execute if score #MWL Version matches 16.. if score #MWL AddedVines matches 1 run function mwj:system/ongame/twisting_vines/main
 
-## Seer System
+## Clever Wolf System
 execute as @a[team=Player,scores={CurrentRole=3}] run function mwj:system/ongame/clever_wolf/main
 
 ## Fox System

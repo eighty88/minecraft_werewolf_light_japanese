@@ -1,0 +1,30 @@
+{
+    "type": "generic",
+    "pools":[
+      {
+        "rolls":1,
+        "entries":[
+          {
+            "type":"minecraft:item",
+            "name":"minecraft:warped_fungus_on_a_stick",
+            "functions":[
+              {
+                "function":"minecraft:set_name",
+                "name": [
+                  [{"text":"ドローン制御装置","italic":false}]
+                ]
+              },{
+                "function":"minecraft:set_lore",
+                "lore": [
+                    [{"text":"自由に動かせるドローンを召喚する","italic":false,"color":"white"}],
+                    [{"text":"ドローン召喚中に再使用すると","italic":false,"color":"white"}],
+                    [{"text":"ドローンを回収できる","italic":false,"color":"white"}]
+                ]
+            }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

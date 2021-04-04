@@ -16,7 +16,7 @@ gamerule doMobSpawning false
 gamerule keepInventory false
 gamerule sendCommandFeedback false
 gamerule showDeathMessages false
-difficulty peaceful
+difficulty easy
 gamemode adventure @a[gamemode=!spectator]
 effect clear @a[gamemode=!spectator]
 recipe take @a *

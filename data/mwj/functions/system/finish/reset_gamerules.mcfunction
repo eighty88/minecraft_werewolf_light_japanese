@@ -8,7 +8,7 @@
 ###############################
 
 ## Change gamerules
-difficulty peaceful
+difficulty easy
 gamemode adventure @a
 gamerule announceAdvancements true
 gamerule commandBlockOutput true
