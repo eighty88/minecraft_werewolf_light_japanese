@@ -25,3 +25,5 @@ scoreboard players set #MWL SetDrunk 0
 scoreboard players set #MWL PrevSetDrunk 0
 
 scoreboard players set @a Drunk 0
+
+scoreboard objectives add PrevAddedFire dummy

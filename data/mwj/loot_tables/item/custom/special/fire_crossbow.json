@@ -1,0 +1,31 @@
+{
+    "type": "generic",
+    "pools":[
+      {
+        "rolls":1,
+        "entries":[
+          {
+            "type":"minecraft:item",
+            "name":"minecraft:crossbow",
+            "functions":[
+              {
+                "function":"minecraft:set_name",
+                "name": [
+                  [{"text":"火炎のクロスボウ","italic":true}]
+                ]
+              },{
+                  "function":"minecraft:set_lore",
+                  "lore": [
+                      
+                  ]
+              },{
+                "function":"minecraft:set_nbt",
+                "tag":"{Damage:325,CustomModelData:4,Charged:1b,Enchantments:[{id:\"quick_charge\",lvl:10}],HideFlags:63,ChargedProjectiles:[{id:\"arrow\",Count:1b,tag:{Color:-1,Silent:1b,damage:1.2,Fire:10000s,PickupDelay:1000s}}]}"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

@@ -2,8 +2,9 @@
 ## Minecraft Version 1.14-1.16
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
+## Custom by eight_y_88, Soukun_palpunte
 ## Date   : 20 Mar 2021
-## Version: v.1.5
+## Version: v.1.5 custom
 ###############################
 
 ## Store Valiable
@@ -57,3 +58,6 @@ execute if score #MWL AddedLantern matches 1 run scoreboard players add #MWL TEM
 
 execute if score #MWL AddedVines matches 1 if score #MWL ONES_DIGIT >= #MWL TEMP_DIGIT as @p[team=Player,tag=!MWLitem,sort=random] run function mwj:system/preparation/item/special/twisting_vines
 execute if score #MWL AddedVines matches 1 run scoreboard players add #MWL TEMP_DIGIT 1
+
+execute if score #MWL AddedFire matches 1 if score #MWL ONES_DIGIT >= #MWL TEMP_DIGIT as @p[team=Player,tag=!MWLitem,sort=random] run function mwj:system/custom/preparation/item/special/fire_crossbow
+execute if score #MWL AddedFire matches 1 run scoreboard players add #MWL TEMP_DIGIT 1

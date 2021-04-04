@@ -16,7 +16,7 @@
  - 再配布は禁止です。
 
 ## version
- 1. 以下のリンクの [minecraft_werewolf_light_japanese-v-1_5.zip][v.1.5] をクリックして、データパックをDL。
+ 1. 以下のリンクの [minecraft_werewolf_light_japanese-v-1_5.zip][v.1.5 custom] をクリックして、データパックをDL。
  2. DLしたzipファイルを、使用するワールドのフォルダ内[datapacks]にコピー。
  3. ワールドを開き、コマンド `/reload` を実行して、「Thank you for Downloading」と出れば導入完了！
 
@@ -52,7 +52,7 @@
  - 22 Aug 2020 - [v.1.4.1][v.1.4.1]**(推奨)**
    - 一部役職を予言/霊媒/探偵時に結果が出力されないバグを修正
    - 配役選択・役職欠け時に欠けてはいけない役職が欠けるバグを修正
- - 20 Mar 2021 - [v.1.5][v.1.5]**(推奨)**
+ - 20 Mar 2021 - [v.1.5 custom][v.1.5 custom]**(推奨)**
    - 新役職追加
      - 赤ずきん
      - 賢狼
@@ -99,5 +99,5 @@
 [v.1.3.1]:https://github.com/KizahashiLuca/minecraft_werewolf_light_japanese/releases/tag/v.1.3.1
 [v.1.4]:https://github.com/KizahashiLuca/minecraft_werewolf_light_japanese/releases/tag/v.1.4
 [v.1.4.1]:https://github.com/KizahashiLuca/minecraft_werewolf_light_japanese/releases/tag/v.1.4.1
-[v.1.5]:https://github.com/KizahashiLuca/minecraft_werewolf_light_japanese/releases/tag/v.1.5
+[v.1.5 custom]:https://github.com/KizahashiLuca/minecraft_werewolf_light_japanese/releases/tag/v.1.5 custom
 [twitter]:https://www.twitter.com/KizahashiLuca

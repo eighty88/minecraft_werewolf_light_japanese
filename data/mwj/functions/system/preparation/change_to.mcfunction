@@ -2,8 +2,9 @@
 ## Minecraft Version 1.14-1.16
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
+## Custom by eight_y_88, Soukun_palpunte
 ## Date   : 20 Mar 2021
-## Version: v.1.5
+## Version: v.1.5 custom
 ###############################
 
 ## Title Hiding Start
@@ -13,7 +14,7 @@ title @a subtitle ["",{"text":"Hiding Start","color":"white","bold":true}]
 
 ## Send a Message Added Role to All Players
 tellraw @a ["",{"text":"\n----------------------------------","color":"white"}]
-tellraw @a ["",{"text":"Minecraft Werewolf Light v.1.5","color":"red","bold":true}]
+tellraw @a ["",{"text":"Minecraft Werewolf Light v.1.5 custom","color":"red","bold":true}]
 tellraw @a ["",{"text":" - ","color":"white"},{"text":"Hiding Start","color":"green","bold":true}]
 tellraw @a ["",{"text":"----------------------------------","color":"white"}]
 tellraw @a ["",{"text":"  ゲームの詳しいルールなどは、","color":"white"},{"text":"こちら","bold":true,"color":"blue","underlined":true,"clickEvent":{"action":"open_url","value":"https://github.com/KizahashiLuca/minecraft_werewolf_light_japanese/wiki"}},{"text":"\n","color":"white"}]
@@ -53,7 +54,8 @@ execute if score #MWL AddedCrossbow matches 1.. run tellraw @a ["",{"text":"    
 execute if score #MWL AddedHoneyBlock matches 1.. run tellraw @a ["",{"text":"    ","color":"white"},{"text":"・スティッキー地雷","color":"white","bold":true}]
 execute if score #MWL AddedLantern matches 1.. run tellraw @a ["",{"text":"    ","color":"white"},{"text":"・テレポーター","color":"white","bold":true}]
 execute if score #MWL AddedVines matches 1.. run tellraw @a ["",{"text":"    ","color":"white"},{"text":"・ねじれツタ","color":"white","bold":true}]
-execute if score #MWL AddedStick matches 0 if score #MWL AddedTotem matches 0 if score #MWL AddedDeath matches 0 if score #MWL AddedPearl matches 0 if score #MWL AddedHoe matches 0 if score #MWL AddedElytra matches 0 if score #MWL AddedSnowball matches 0 if score #MWL AddedInvis matches 0 if score #MWL AddedSpeed matches 0 if score #MWL AddedJump matches 0 if score #MWL AddedTrident matches 0 if score #MWL AddedConduit matches 0 if score #MWL AddedCrossbow matches 0 if score #MWL AddedHoneyBlock matches 0 if score #MWL AddedLantern matches 0 if score #MWL AddedVines matches 0 run tellraw @a ["",{"text":"    ","color":"white"},{"text":"・無し","color":"white","bold":true}]
+function mwj:system/custom/preparation/change_to
+execute if score #MWL AddedStick matches 0 if score #MWL AddedTotem matches 0 if score #MWL AddedDeath matches 0 if score #MWL AddedPearl matches 0 if score #MWL AddedHoe matches 0 if score #MWL AddedElytra matches 0 if score #MWL AddedSnowball matches 0 if score #MWL AddedInvis matches 0 if score #MWL AddedSpeed matches 0 if score #MWL AddedJump matches 0 if score #MWL AddedTrident matches 0 if score #MWL AddedConduit matches 0 if score #MWL AddedCrossbow matches 0 if score #MWL AddedHoneyBlock matches 0 if score #MWL AddedLantern matches 0 if score #MWL AddedVines matches 0 if score #MWL AddedFire matches 0 run tellraw @a ["",{"text":"    ","color":"white"},{"text":"・無し","color":"white","bold":true}]
 tellraw @a ["",{"text":"----------------------------------\n","color":"white"}]
 
 ## Reset Scoreboard
@@ -62,6 +64,6 @@ scoreboard players operation #MWL Second = #MWL ChangeHideTime
 scoreboard players set #MWL Phase 10
 
 ## Set bossbar
-bossbar set minecraft:bossbar name [{"text":"潜伏時間  残り "},{"score":{"name":"#MWL","objective":"Second"}},{"text":" 秒"}]
+bossbar set minecraft:bossbar name [{"text":"潜伏時間  残り "},{"score":{"name":"#MWL","objective":"Second"},"color":"green"},{"text":" 秒"}]
 execute store result bossbar minecraft:bossbar max run scoreboard players get #MWL ChangeHideTime
 execute store result bossbar minecraft:bossbar value run scoreboard players get #MWL Second
