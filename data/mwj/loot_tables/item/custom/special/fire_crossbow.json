@@ -20,7 +20,7 @@
                   ]
               },{
                 "function":"minecraft:set_nbt",
-                "tag":"{Damage:325,CustomModelData:4,Charged:1b,Enchantments:[{id:\"quick_charge\",lvl:10}],HideFlags:63,ChargedProjectiles:[{id:\"arrow\",Count:1b,tag:{Color:-1,Silent:1b,damage:1.2,Fire:10000s,PickupDelay:1000s}}]}"
+                "tag":"{Tags:[\"MWLitem\"],Damage:325,CustomModelData:4,Charged:1b,Enchantments:[{id:\"quick_charge\",lvl:10}],HideFlags:63,ChargedProjectiles:[{id:\"arrow\",Count:1b,tag:{Color:-1,Silent:1b,damage:1.2,Fire:10000s,PickupDelay:1000s}}]}"
               }
             ]
           }

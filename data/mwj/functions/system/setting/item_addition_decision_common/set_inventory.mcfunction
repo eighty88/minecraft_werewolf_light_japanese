@@ -35,6 +35,7 @@ execute if score #MWL Phase matches 85 run function mwj:system/setting/item_addi
 execute if score #MWL Phase matches 86 run function mwj:system/setting/item_addition_decision_2/set_inventory
 execute if score #MWL Phase matches 87 run function mwj:system/setting/item_addition_decision_3/set_inventory
 execute if score #MWL Phase matches 88 run function mwj:system/setting/item_addition_decision_4/set_inventory
+execute if score #MWL Phase matches 201 run function mwj:system/custom/setting/item_addition_decision_1/set_inventory
 
 ## Set items
 loot replace entity @p[tag=Host] inventory.9 loot mwj:setting/common/white_banner_left

@@ -369,8 +369,8 @@ function mwj:system/custom/setting/scoreboard/create
 ## Set bossbar
 scoreboard players set #MWL Tick 0
 scoreboard players operation #MWL Second = #MWL SettingTime
-bossbar add minecraft:bossbar [{"text":"初期設定時間  残り "},{"score":{"name":"#MWL","objective":"Second"}},{"text":" 秒"}]
+bossbar add minecraft:bossbar [{"text":"初期設定時間  残り "},{"score":{"name":"#MWL","objective":"Second"},"color":"green"},{"text":" 秒"}]
 bossbar set minecraft:bossbar players @a
-bossbar set minecraft:bossbar name [{"text":"初期設定時間  残り "},{"score":{"name":"#MWL","objective":"Second"}},{"text":" 秒"}]
+bossbar set minecraft:bossbar name [{"text":"初期設定時間  残り "},{"score":{"name":"#MWL","objective":"Second"},"color":"green"},{"text":" 秒"}]
 execute store result bossbar minecraft:bossbar max run scoreboard players get #MWL SettingTime
 execute store result bossbar minecraft:bossbar value run scoreboard players get #MWL Second

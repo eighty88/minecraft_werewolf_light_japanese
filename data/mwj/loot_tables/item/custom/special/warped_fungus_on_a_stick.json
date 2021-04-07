@@ -20,6 +20,9 @@
                     [{"text":"ドローン召喚中に再使用すると","italic":false,"color":"white"}],
                     [{"text":"ドローンを回収できる","italic":false,"color":"white"}]
                 ]
+            },{
+              "function":"minecraft:set_nbt",
+              "tag":"{Tags:[\"MWLitem\"]}"
             }
             ]
           }

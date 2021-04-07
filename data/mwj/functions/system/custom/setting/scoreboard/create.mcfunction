@@ -26,4 +26,19 @@ scoreboard players set #MWL PrevSetDrunk 0
 
 scoreboard players set @a Drunk 0
 
+## Add Variables for GUI Item Addition
+scoreboard objectives add AddedFire dummy
+scoreboard objectives add AddedDrone dummy
+scoreboard objectives add AddedHoming dummy
 scoreboard objectives add PrevAddedFire dummy
+scoreboard objectives add PrevAddedDrone dummy
+scoreboard objectives add PrevAddedHoming dummy
+## Set Variables for GUI Item Addition
+scoreboard players set #MWL AddedFire 1
+scoreboard players set #MWL AddedDrone 1
+execute if score #MWL Version matches 16.. run scoreboard players set #MWL AddedDrone 1
+scoreboard players set #MWL AddedHoming 1
+scoreboard players set #MWL PrevAddedFire 1
+scoreboard players set #MWL PrevAddedDrone 0
+execute if score #MWL Version matches 16.. run scoreboard players set #MWL PrevAddedDrone 1
+scoreboard players set #MWL PrevAddedHoming 1
