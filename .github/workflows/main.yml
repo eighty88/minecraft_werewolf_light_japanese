@@ -16,7 +16,7 @@ jobs:
       run: |
         mkdir output
         cd output
-        zip release -x "*.md" "*LICENCE*" "*/.github/*"
+        zip -r release.zip -x "*.md" "*LICENCE*" "*/.github/*"
 
     - name: Create release
       id: create_release
