@@ -12,6 +12,11 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
+    - name: Zip output
+      run: |
+        cd output
+        zip release -x "*.md" "*LICENCE*" "*/.github/*"
+
     - name: Create release
       id: create_release
       uses: actions/create-release@v1.0.0
